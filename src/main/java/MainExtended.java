@@ -12,5 +12,6 @@ public class MainExtended {
         System.out.println(height);
         System.out.println(sheHasANewCar);
         System.out.println(domicile);
+
     }
 }
