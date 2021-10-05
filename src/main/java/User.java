@@ -7,8 +7,8 @@ public class User {
             private int [] ;
 
             public User() {
-                private int myName;
-                private int age;
+                int myName;
+                int age;
 
             }
         }
