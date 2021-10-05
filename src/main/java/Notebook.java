@@ -31,7 +31,7 @@ public class Notebook {
         }
     }
     public void checkYear () {
-        if (this.year < 2015 || this.weight > 1500) {
+        if (this.year < 2015 || this.price < 1200) {
             System.out.println("This notebook is not too old.");
         }
         else if (this.year > 1991 && this.price < 750) {
