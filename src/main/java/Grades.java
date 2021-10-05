@@ -1,14 +1,12 @@
 public class Grades {
     private int[] grades;
     private int size;
-    private int lastRating;
-    private int advertage;
+
 
     public Grades() {
         this.grades = new int[10];
         this.size = 0;
-        this.lastRating = 10;
-        this.advertage = int value
+
     }
 
     public void add(int value) {
@@ -19,16 +17,22 @@ public class Grades {
         this.size++;
     }
 
-    public void returnLastRating(int value) {
-        if (this.lastRating == this.size) {
-            return;
+    public int getLastRating() {
+        if (this.size == 0 ) {
+            return 0;
         }
-        this.grades[this.lastRating] = value;
-        this.lastRating++;
-        return;
-        System.out.println(this.lastRating++);
+        return this.grades[this.size-1];
     }
-}
+    public double getaverige() {
+        double avg = 0;
+        int sum = 0;
+        for (int i = 0; i < this.size; i++ ) {
+            sum = sum + this.grades[i];
+        }
+        avg = sum / size;
+        System.out.println(avg);
+        return avg;
+    }
 }
 
 
