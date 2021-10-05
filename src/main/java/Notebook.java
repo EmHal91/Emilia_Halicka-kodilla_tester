@@ -21,7 +21,7 @@ public class Notebook {
     }
     public void checkWeight () {
         if (this.weight< 1000) {
-            System.out.println("This notebook is light.");
+            System.out.println("This notebook is slight.");
         }
         if (this.weight> 1000 && this.weight < 1700) {
             System.out.println("This notebook is not very heavy.");
@@ -31,13 +31,13 @@ public class Notebook {
         }
     }
     public void checkYear () {
-        if (this.year > 1991 && this.price < 750) {
+        if (this.year < 2015 || this.weight > 1500) {
+            System.out.println("This notebook is not too old.");
+        }
+        else if (this.year > 1991 && this.price < 750) {
             System.out.println("This notebook is jus right.");
         } else {
             System.out.println("This notebook is a bad choise.");
-        }
-        if (this.year < 2015 || this.weight > 1500) {
-            System.out.println("This notebook is not too old.");
         }
     }
 }
