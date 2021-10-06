@@ -23,7 +23,7 @@ public class Grades {
         }
         return this.grades[this.size-1];
     }
-    public double getaverige() {
+    public double getAverage() {
         double avg = 0;
         int sum = 0;
         for (int i = 0; i < this.size; i++ ) {
