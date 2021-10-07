@@ -33,12 +33,13 @@ public class User {
     }
 
     public int getSum () {
-            int sum = 0;
-            for (int i = 0; i < user.length; i++) {
-                sum = sum + this.user[i];
-                this.sum++;
-                return sum;
-            }
+        int sum = 0;
+        for (int i = 0; i < user.length; i++) {
+            sum = sum + this.user[i];
+            this.sum++;
+            return sum;
+        }
+    }
     public int getAverage () {
                 int avg = 0;
                 avg = sum / user.length;
@@ -51,7 +52,7 @@ public class User {
                 }
             }
 
-        }
+
 }
 
 
