@@ -3,7 +3,7 @@ public class User {
     private String name;
     private int age;
     private int sum;
-    private int avg;
+    private double avg;
 
     public static void main(String[] args) {
         String name = "Emilia";
@@ -38,10 +38,12 @@ public class User {
             sum = sum + this.user[i];
             this.sum++;
             return sum;
+            System.out.println(sum);
         }
     }
-    public int getAverage () {
-                int avg = 0;
+
+    public double getAverage () {
+                double avg = 0;
                 avg = sum / user.length;
                 System.out.println(avg);
                 return (int) avg;
@@ -50,6 +52,7 @@ public class User {
                  age = this.user[i];
                  return this.avg[this.name];
                 }
+                System.out.println(this.avg + this.name);
             }
 
 
