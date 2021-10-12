@@ -3,7 +3,7 @@ public class User {
     private String name;
     private int age;
     private int sum;
-    private double avg;
+    private int avg;
 
     public static void main(String[] args) {
         String name = "Emilia";
@@ -11,6 +11,7 @@ public class User {
         System.out.println(name);
         System.out.println(age);
     }
+
     public User(String name, int age) {
         this.user = new int[7];
 
@@ -26,13 +27,14 @@ public class User {
 
         System.out.println(name + age);
 
-        }
+    }
 
     private void user(String name, int age) {
+
         return;
     }
 
-    public int getSum () {
+    public int getSum() {
         int sum = 0;
         for (int i = 0; i < user.length; i++) {
             sum = sum + this.user[i];
@@ -42,20 +44,32 @@ public class User {
         }
     }
 
-    public double getAverage () {
-                double avg = 0;
-                avg = sum / user.length;
-                System.out.println(avg);
-                return (int) avg;
+    public double getAverage() {
+        double avg = 0;
+        avg = sum / user.length;
+        System.out.println(avg);
+        return (int) avg;
 
-                for (int i = 0; i < this.avg; i++) {
-                 age = this.user[i];
-                 return this.avg[this.name];
-                }
-                System.out.println(this.avg + this.name);
-            }
+        for (int i = 0; i < this.avg; i++) {
+            age = this.user[i];
+            return this.avg[this.name];
+        }
+        System.out.println(this.avg + this.name);
+    }
 
+    public void getName() {
+        String name;
+        int age;
+        int avg;
 
+        for (int i = 0; i < this.avg; i++) {
+          avg = sum / user.length;
+          System.out.println(avg);
+          return name(this.age<this.avg);
+          System.out.println(name);
+        }
+
+    }
 }
 
 
