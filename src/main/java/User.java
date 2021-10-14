@@ -42,7 +42,7 @@ public class User {
         for (int i = 0; i < users.length; i++) {
             sum = sum + users[i].age;
         }
-        System.out.println(sum);
+        System.out.println("Suma wieku wynosi" + sum);
         return sum;
 
     }
