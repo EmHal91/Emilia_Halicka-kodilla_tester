@@ -1,20 +1,10 @@
 public class User {
-    private int[] user;
     private String name;
     private int age;
-    private int sum;
-    private int avg;
 
     public static void main(String[] args) {
         String name = "Emilia";
         int age = 30;
-        System.out.println(name);
-        System.out.println(age);
-    }
-
-    public User(String name, int age) {
-        this.user = new int[7];
-
         User ola = new User("Ola", 18);
         User kasia = new User("Kasia", 21);
         User mariola = new User("Mariola", 27);
@@ -24,53 +14,43 @@ public class User {
         User tomek = new User("Tomek", 42);
 
         User[] users = {ola, kasia, mariola, justyna, agnieszka, przemek, tomek};
+        double avg = getAverage(users);
+        for (User user: users) {
+            if (user.age< avg) {
+                System.out.println(user.name);
+            }
+        }
+
+        System.out.println(name);
+        System.out.println(age);
+    }
+
+    public User(String name, int age) {
+        this.name = name;
+        this.age= age;
 
         System.out.println(name + age);
 
     }
-
     private void user(String name, int age) {
 
         return;
     }
-
-    public int getSum() {
+    public static int getSum(User[] users ) {
         int sum = 0;
-        for (int i = 0; i < user.length; i++) {
-            sum = sum + this.user[i];
-            this.sum++;
-            return sum;
-            System.out.println(sum);
+
+        for (int i = 0; i < users.length; i++) {
+            sum = sum + users[i].age;
         }
-    }
-
-    public double getAverage() {
-        double avg = 0;
-        avg = sum / user.length;
-        System.out.println(avg);
-        return (int) avg;
-
-        for (int i = 0; i < this.avg; i++) {
-            age = this.user[i];
-            return this.avg[this.name];
-        }
-        System.out.println(this.avg + this.name);
-    }
-
-    public void getName() {
-        String name;
-        int age;
-        int avg;
-
-        for (int i = 0; i < this.avg; i++) {
-          avg = sum / user.length;
-          System.out.println(avg);
-          return name(this.age<this.avg);
-          System.out.println(name);
-        }
+        System.out.println(sum);
+        return sum;
 
     }
-}
+    public static double getAverage(User[] users) {
+        return getSum(users)/users.length;
+    }
+
+    }
 
 
 
