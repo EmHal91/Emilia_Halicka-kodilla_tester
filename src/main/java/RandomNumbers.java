@@ -22,7 +22,6 @@ public class RandomNumbers {
         System.out.println(n2);
         return n2;
     }
-
     public static int nextInt(int random) {
 
         for (int i = 0; i < 31; i++) {
@@ -30,6 +29,7 @@ public class RandomNumbers {
         System.out.println(random);
         return random;
     }
+
 
 }
 
