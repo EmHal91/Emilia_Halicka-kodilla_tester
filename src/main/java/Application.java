@@ -3,9 +3,9 @@ public class Application {
     double age;
     double height;
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
 
-        User[] users = new User("Adam", 40.5,);
+        User[] users = new User("Adam", 40.5, 178);
     }
 
     public void checkAgeAndHeight() {
