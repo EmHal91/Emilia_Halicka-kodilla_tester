@@ -1,6 +1,7 @@
 public class User {
     private String name;
     private int age;
+    private double height;
 
     public static void main(String[] args) {
         String name = "Emilia";

@@ -4,10 +4,14 @@ public class Application {
     double height;
 
     public static void main(String[] args) {
-        User [] users =  new  User (" Adam " , 40,5 , 178 );
-
+        Application application = new Application("Adam", 40.5, 178);
+        application.checkAgeAndHeight();
     }
-
+    public Application (String name, double age, double height){
+        this.name = "Adam";
+        this.age = 40.5;
+        this.height = 178;
+    }
     public void checkAgeAndHeight() {
         if (name != null) {
             if (age > 30 && height > 160) {
