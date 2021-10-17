@@ -1,36 +1,45 @@
-public class RandomNumbers {
-    int start = 0;
-    int end = 31;
+import java.util.Random;
 
+public class RandomNumbers {
+    
     public static void main(String[] args) {
 
-        RandomNumbers random = new RandomNumbers();
+        Random random = new Random();
+        
+        int max = getMaxLos(random.nextInt(31));
+        int min = getMinLos(random.nextInt(31));
+        int sum = getSum(random.nextInt(31));
 
-        for (int i = 0; i < 31; i++) {
-            int start = 0;
-            int end = 31;
-            System.out.println(i);
-            System.out.println(randomBetween(0, 31));
+        int los = random.nextInt(31);
+
+        System.out.println("Wylosowana liczba wynosi" + los);
+    }
+
+    public static int getMaxLos(int randoms) {
+        int max = 30;
+        int los = 30;
+        if (max <= los) {
         }
+        System.out.println("Maksymalna wylosowana wartość wynosi" + max);
+        return max;
     }
-    public static int randomBetween(int start, int end) {
-        RandomNumbers random = new RandomNumbers();
-
-        int n1 = random.nextInt(end - start - 1);
-        int n2 = n1 + start;
-
-        System.out.println(n2);
-        return n2;
-    }
-    public static int nextInt(int random) {
-
-        for (int i = 0; i < 31; i++) {
+    public static int getMinLos(int randoms) {
+        int los = 0;
+        int min = 0;
+        if (min >= los) {
         }
-        System.out.println(random);
-        return random;
+        System.out.println("Minimalna wylosowana wartość wynosi" + min);
+        return min;
     }
-
-
+    public static int getSum (int los) {
+        int sum = 0;
+        while(sum <= 5000){
+            sum = sum + los;
+            System.out.println(sum);
+            sum++;
+        }
+        return sum;
+    }
 }
 
 
