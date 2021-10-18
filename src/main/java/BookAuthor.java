@@ -7,10 +7,9 @@ public class BookAuthor {
         String title = book.getTitle("Pan Tadeusz");
         System.out.println(title);
     }
-    public static String getBook(String author, String title) {
+    public static void getBook(String author, String title) {
         Book book = new Book ();
         System.out.println();
-        return;
     }
 
 }

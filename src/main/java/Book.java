@@ -11,11 +11,7 @@ public class Book {
         return title;
     }
 
-    private static String getBookOf (String author, String title) {
-       String author = Book.getAuthorName();
-       String title = Book.getTitle();
-       System.out.println(author + title);
-       return author + title;
+
     }
 
-}
+
