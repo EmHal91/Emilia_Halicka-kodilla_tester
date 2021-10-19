@@ -2,10 +2,10 @@ import java.util.Scanner;
 public class ColorName {
     public static String getColorname() {
         Scanner scanner = new Scanner(System.in);
-        while (true){
+        while (true) {
             System.out.println("Select the first letter of a color (P - pomarańczowy, N- niebieski, G- granatowy, Z- zielony):");
             String first = scanner.nextLine().trim().toUpperCase();
-            swich (first) {
+            switch (first) {
                 case "P":
                     return "POMARAŃCZOWY";
                 case "N":
@@ -19,9 +19,4 @@ public class ColorName {
             }
         }
     }
-    public static int getLetter() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter number:");
-        int let = scanner.nextInt();
-        return let;
 }

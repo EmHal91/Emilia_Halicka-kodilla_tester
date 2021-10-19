@@ -2,55 +2,47 @@ import java.util.Random;
 
 public class RandomNumbers {
     int los;
+    static int min;
+    static int max;
 
     public static void main(String[] args) {
 
-        Random random = new Random(31);
+        int sum = getSum();
+        int max = getMaxLos();
+        int min = getMinLos();
 
-        int los = random.nextInt(31);
-
-        int max = getMaxLos(random.nextInt( 31 ));
-        int min = getMinLos(random.nextInt( 31 ));
-        int sum = getSum(random.nextInt( 31 ));
-
-        System.out.println("Wylosowana liczba wynosi" + los);
+        System.out.println("Wylosowana liczba wynosi" + sum);
     }
 
     public RandomNumbers (Random [] randoms){
         this.los = los;
     }
 
-    public static int getMaxLos(int randoms) {
-        int max = 30;
-        if (max <= 0) {
-        }
-        System.out.println("Maksymalna wylosowana wartość wynosi" + max);
+    public static int getMaxLos() {
         return max;
     }
-    public static int getMinLos(int i) {
-        int los = 0;
-        int min = 0;
-        if (min >= los) {
-        }
-        System.out.println("Minimalna wylosowana wartość wynosi" + min);
+    public static int getMinLos() {
         return min;
     }
-    public static int getSum(int i) {
-        int sum = 0;
-        int newMaxSum = 2;
-        int newMinSum = 1;
+    public static int getSum() {
+        Random random = new Random(31);
+        int sum = random.nextInt(31);
+        max = sum;
+        min = sum;
         while(sum <= 5000){
-            sum = sum;
+            int los = random.nextInt(31);
+            sum = sum + los;
             System.out.println(sum);
-            sum++;
-            if(newMaxSum>sum){
-                System.out.println("To jest nowa maksymalna suma" + newMaxSum);
+            if(los>max){
+                max=los;
+                System.out.println("To jest nowa maksymalna suma" + max);
             }
-            else {
-                System.out.println("To nie jest nowa minimalna suma" + newMinSum);
+            if (los<min) {
+                min=los;
+                System.out.println("To nie jest nowa minimalna suma" + min);
             }
         }
-        return newMaxSum;
+        return sum;
 
     }
 }
