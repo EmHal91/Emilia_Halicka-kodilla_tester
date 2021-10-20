@@ -2,10 +2,14 @@ public class Book {
     private String author;
     private String title;
 
-    private static String of() {
-        String author = "Adam Mickiewicz";
-        String title = "Pan Tadeusz";
-        String book = author + title;
+    public Book(){
+        author = "Adam Mickiewicz";
+        title = "Pan Tadeusz";
+    }
+    Book book = new Book();
+
+    public static Book of(Book[] books) {
+        Book book = new Book();
         System.out.println(book);
         return book;
     }
