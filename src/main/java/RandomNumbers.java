@@ -24,6 +24,7 @@ public class RandomNumbers {
     public static int getMinLos() {
         return min;
     }
+
     public static int getSum() {
         Random random = new Random(31);
         int sum = random.nextInt(31);
