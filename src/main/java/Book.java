@@ -6,7 +6,6 @@ public class Book {
         author = "Adam Mickiewicz";
         title = "Pan Tadeusz";
     }
-    Book book = new Book();
 
     public static Book of(Book[] books) {
         Book book = new Book();
