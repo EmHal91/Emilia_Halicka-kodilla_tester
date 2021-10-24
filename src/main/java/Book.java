@@ -11,18 +11,14 @@ public class Book {
         Book book = new Book();
     }
 
-    public static String getOf() {
-        author = author;
-        title = title;
-        if (author == author) {
-            System.out.println(Book.author);
+    public static Book of(String author, String title) {
+        Book book = new Book();
+        book.author = author;
+        book.title = title;
+        return book;
         }
-        if (title == title) {
-            System.out.println(Book.title);
-        }
-        return Book.author+ Book.title;
     }
-}
+
 
 
 
