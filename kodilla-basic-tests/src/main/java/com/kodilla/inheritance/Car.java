@@ -9,6 +9,9 @@ public class Car {
         this.seats = seats;
         System.out.println("Car constructor");
     }
+    public void displayNumberOfSeats() {
+        System.out.println("Number of seats: " + seats);
+    }
 
     public void turnOnLights() {
         System.out.println("Lights were turned on");
@@ -16,4 +19,12 @@ public class Car {
     public void openDoors() {
         System.out.println("Opening 4 doors");
     }
+    public int getWheels() {
+        return wheels;
+    }
+
+    public int getSeats() {
+        return seats;
+    }
+
 }
