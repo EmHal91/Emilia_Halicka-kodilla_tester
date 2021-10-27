@@ -1,9 +1,8 @@
 package com.kodilla.inheritance.homework;
 
 public class FirstSystem extends OperatingSystem {
-
     public FirstSystem (int year) {
-        super (year);
+        super(year);
         System.out.println("System wydany w 1998 roku");
     }
     public void turnOn (){
