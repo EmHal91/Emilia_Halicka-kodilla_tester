@@ -1,13 +1,18 @@
 package com.kodilla.inheritance.homework;
 
 public class Square extends Shape{
+
+    public int a = 3;
+
     @Override
-    public void getSurfaceArea() {
-        System.out.println("This is the area of the square");
+    public double getSurfaceArea() {
+        System.out.println("This is the area of the square" + (a*a));
+        return a*a;
     }
 
     @Override
-    public void getPerimeter() {
-        System.out.println("This is the perimeter od the square");
+    public double getPerimeter() {
+        System.out.println("This is the perimeter od the square"+ (4*a));
+        return 4*a;
     }
 }
