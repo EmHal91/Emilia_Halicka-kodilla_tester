@@ -7,7 +7,7 @@ public class ColorName {
             String first = scanner.nextLine().trim().toUpperCase();
             switch (first) {
                 case "P":
-                    return "POMARAŃCZOWY";
+                    return "POMARANCZOWY";
                 case "N":
                     return "NIEBIESKI";
                 case "G":

@@ -13,8 +13,8 @@ public class Calculator {
     public int getSquareNumber1 (int a){
         return a*a;
     }
-
     public int getSquareNumber2 (int b) {
         return b*b;
     }
+
 }
