@@ -10,7 +10,8 @@ import java.util.Random;
 public class CarsApplication {
 
     public static void main(String[] args) {
-        Car[] cars = new Car[16];
+        Random random = new Random();
+        Car[] cars = new Car[random.nextInt(16)];
         for (int n = 0; n < cars.length; n++)
             cars[n] = drawCar();
         for ( Car car : cars)
@@ -19,12 +20,11 @@ public class CarsApplication {
 
     public static Car drawCar(){
         Random random = new Random();
-        Car[] cars = new Car[random.nextInt(15)];
 
         int drawnCarKind = random.nextInt(15);
-        int a = random.nextInt();
-        int b = random.nextInt();
-        int c = random.nextInt();
+        int a = random.nextInt(101);
+        int b = random.nextInt(101) + 20;
+        int c = random.nextInt(101) + 50;
         if (drawnCarKind == 0)
             return new Audi(a);
         else if (drawnCarKind == 1)
