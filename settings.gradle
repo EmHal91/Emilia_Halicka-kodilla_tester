@@ -3,4 +3,6 @@ include 'kodilla-intro'
 include 'kodilla-basic-tests'
 include 'kodilla-collections'
 include 'kodilla-collections'
+include 'kodilla-collections:kodilla-collections-advanced'
+findProject(':kodilla-collections:kodilla-collections-advanced')?.name = 'kodilla-collections-advanced'
 
